@@ -1,8 +1,25 @@
+from datetime import datetime
 from django.conf.urls import url
-from django.contrib.auth import views as auth_views
+import django.contrib.auth.views
+import app.forms
 
 urlpatterns = [
-    url(r'login2/$', auth_views.login, name='login', kwargs={
-        'template_name': 'app/login.html'
-    }),
+    url(r'^login/$',
+        django.contrib.auth.views.login,
+        {
+            'template_name': 'app/login.html',
+            'authentication_form': app.forms.BootstrapAuthenticationForm,
+            'extra_context':
+            {
+                'title': 'Log In',
+                'year': datetime.now().year,
+            }
+        },
+        name='login'),
+    url(r'^logout$',
+        django.contrib.auth.views.logout,
+        {
+            'next_page': '/',
+        },
+        name='logout'),
 ]
