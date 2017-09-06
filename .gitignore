@@ -411,6 +411,9 @@ paket-files/
 *.odx.cs
 *.xsd.cs
 
+# sqllite3 file
+*.sqllite3
+
 ### VisualStudio Patch ###
 # By default, sensitive information, such as encrypted password
 # should be stored in the .pubxml.user file.
