@@ -8,7 +8,7 @@ def signup(request):
         form = UserCreationForm(request.POST)
         if form.is_valid():
             form.save()
-            return redirect(settings.LOGIN_URL)
+            # return redirect(settings.LOGIN_URL)
     else:
         form = UserCreationForm()
     return render(request, 'app/about.html', {
