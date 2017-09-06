@@ -18,7 +18,7 @@ urlpatterns = [
             }
         },
         name='login'),
-    url(r'signup/$', views.signup, name='signup'),
+    # url(r'signup/$', views.signup, name='signup'),
     url(r'^logout$',
         django.contrib.auth.views.logout,
         {
