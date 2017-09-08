@@ -414,6 +414,9 @@ paket-files/
 # sqllite3 file
 *.sqllite3
 
+# settings.py files
+settings.py
+
 ### VisualStudio Patch ###
 # By default, sensitive information, such as encrypted password
 # should be stored in the .pubxml.user file.
