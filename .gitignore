@@ -414,8 +414,8 @@ paket-files/
 # sqllite3 file
 *.sqllite3
 
-# settings.py files
-settings.py
+# dev_settings.py files
+dev_settings.py
 
 ### VisualStudio Patch ###
 # By default, sensitive information, such as encrypted password
