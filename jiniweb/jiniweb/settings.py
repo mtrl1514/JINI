@@ -90,11 +90,11 @@ DATABASES = {
     #로컬 DB
     'default': {
     'ENGINE': 'django.db.backends.mysql',
-    'NAME': 'jini',
+    'NAME': DATABASE_NAME,
     'USER': DATABASE_USER,
     'PASSWORD': DATABASE_PASSWORD,
-    'HOST': '127.0.0.1',
-    'PORT': '3306'
+    'HOST': DATABASE_HOST,
+    'PORT': DATABASE_PORT
     }
 }
 
