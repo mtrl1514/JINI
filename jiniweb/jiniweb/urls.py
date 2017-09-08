@@ -28,9 +28,9 @@ admin.autodiscover()
 
 urlpatterns = [
     # Examples:
-    url(r'^$', app.views.home, name='home'),
-    url(r'^contact$', app.views.contact, name='contact'),
-    url(r'^about', app.views.about, name='about'),
+    
+    #url(r'^contact$', app.views.contact, name='contact'),
+    #url(r'^about', app.views.about, name='about'),
     # url(r'^login/$',
     #     django.contrib.auth.views.login,
     #     {
@@ -56,6 +56,7 @@ urlpatterns = [
     # Uncomment the next line to enable the admin:
     url(r'^admin/', include(admin.site.urls)),
 
-    url(r'^app/', include('app.urls')),
+    #url(r'^app/', include('app.urls')),
+    url(r'^$', app.views.home, name='home'),
     url(r'^accounts/', include('accounts.urls')),
 ]
