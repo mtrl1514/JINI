@@ -179,3 +179,6 @@ JET_THEMES = [
         'title': 'Light Gray'
     }
 ]
+
+#admin page login
+LOGIN_REDIRECT_URL = '/admin'

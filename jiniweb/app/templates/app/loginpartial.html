@@ -1,9 +1,12 @@
 {% if user.is_authenticated %}
 <form id="logoutForm" action="accounts/logout" method="post" class="navbar-right">
     {% csrf_token %}
-    <ul class="nav navbar-nav navbar-right">
-        <li><span class="navbar-brand">Hello {{ user.username }}!</span></li>
-        <li><a href="javascript:document.getElementById('logoutForm').submit()">Log off</a></li>
+    <ul class="nav navbar-nav navbar-right">        
+        <li><a class="navbar-brand" href="{% url 'home' %}">{{ user.first_name }}</a></li>        
+        <li><a href="javascript:document.getElementById('logoutForm').submit()">Log off</a></li>                
+        {% if user.is_staff %}
+        <li><a class="navbar-brand" href="{% url 'admin:index' %}">Admin</a></li>        
+        {% endif %}
     </ul>
 
 </form>

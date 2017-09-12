@@ -3,7 +3,7 @@ from django.conf.urls import url
 import django.contrib.auth.views
 import app.forms
 
-urlpatterns = [
+urlpatterns = [    
     url(r'^login/$',
         django.contrib.auth.views.login,
         {
@@ -22,4 +22,5 @@ urlpatterns = [
             'next_page': '/',
         },
         name='logout'),
+    
 ]
