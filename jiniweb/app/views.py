@@ -8,17 +8,17 @@ from django.template import RequestContext
 from datetime import datetime
 from django.http import HttpResponseRedirect
 
-# def home(request):
-#     """Renders the home page."""
-#     assert isinstance(request, HttpRequest)
-#     return render(
-#         request,
-#         'app/index.html',
-#         {
-#             'title':'JINI',
-#             'year':datetime.now().year,
-#         }
-#     )
+def home(request):
+    """Renders the home page."""
+    assert isinstance(request, HttpRequest)
+    return render(
+        request,
+        'app/index.html',
+        {
+            'title':'JINI',
+            'year':datetime.now().year,
+        }
+    )
 
 # def contact(request):
 #     """Renders the contact page."""

@@ -59,7 +59,7 @@ urlpatterns = [
     url(r'^admin/', include(admin.site.urls)),
 
     #url(r'^app/', include('app.urls')),
-    #url(r'^$', app.views.home, name='home'),
-    url(r'^$',accounts.views.home, name='home'),
+    url(r'^$', app.views.home, name='home'),
+    #url(r'^$',accounts.views.home, name='home'),
     url(r'^accounts/', include('accounts.urls')),
 ]

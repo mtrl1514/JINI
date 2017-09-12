@@ -54,30 +54,30 @@ def login(request):
          'form': form,
     })
 
-def home(request):           
-    if request.method == 'POST':
-        form = auth.forms.AuthenticationForm(data=request.POST)
-        if form.is_valid():    
-            username = request.POST.get('username', 'guest')
-            password = request.POST.get('password', 'guest')
-            user = authenticate(username=username, password=password)
-            if user is not None:
-                auth.login(request, user)            
-                if user.is_active:  
-                    if user.is_superuser:
-                        return HttpResponseRedirect('/admin')                     
-                    else:
-                        return HttpResponseRedirect('/admin')
+# def home(request):           
+#     if request.method == 'POST':
+#         form = auth.forms.AuthenticationForm(data=request.POST)
+#         if form.is_valid():    
+#             username = request.POST.get('username', 'guest')
+#             password = request.POST.get('password', 'guest')
+#             user = authenticate(username=username, password=password)
+#             if user is not None:
+#                 auth.login(request, user)            
+#                 if user.is_active:  
+#                     if user.is_superuser:
+#                         return HttpResponseRedirect('/admin')                     
+#                     else:
+#                         return HttpResponseRedirect('/admin')
                     
                     
-                else:
-                    # Return a 'disabled account' error message
-                    return HttpResponseRedirect('/accounts/login') 
-            else:
-                # Return an 'invalid login' error message.
-                return HttpResponseRedirect('/accounts/login')              
-    else:            
-        form = auth.forms.AuthenticationForm()
-    return render(request, 'app/index.html', {
-         'form': form,
-    })
+#                 else:
+#                     # Return a 'disabled account' error message
+#                     return HttpResponseRedirect('/accounts/login') 
+#             else:
+#                 # Return an 'invalid login' error message.
+#                 return HttpResponseRedirect('/accounts/login')              
+#     else:            
+#         form = auth.forms.AuthenticationForm()
+#     return render(request, 'app/index.html', {
+#          'form': form,
+#     })
