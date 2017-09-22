@@ -1,11 +1,12 @@
+{% load i18n static %}
 {% if user.is_authenticated %}
 <form id="logoutForm" action="accounts/logout" method="post" class="navbar-right">
     {% csrf_token %}
     <ul class="nav navbar-nav navbar-right">        
         <li><a class="navbar-brand" href="{% url 'home' %}">{{ user.first_name }}</a></li>        
-        <li><a href="javascript:document.getElementById('logoutForm').submit()">Log off</a></li>                
+        <li><a href="javascript:document.getElementById('logoutForm').submit()">{% trans 'Log off' %}</a></li>                
         {% if user.is_staff %}
-        <li><a class="navbar-brand" href="{% url 'admin:index' %}">Admin</a></li>        
+        <li><a class="navbar-brand" href="{% url 'admin:index' %}">{% trans 'Admin' %}</a></li>                
         {% endif %}
     </ul>
 
@@ -14,7 +15,7 @@
 {% else %}
 
 <ul class="nav navbar-nav navbar-right">
-    <li><a href="{% url 'login' %}">Log in</a></li>
+    <li><a href="{% url 'login' %}">{% trans 'Log in' %}</a></li>
 </ul>
 
 {% endif %}
