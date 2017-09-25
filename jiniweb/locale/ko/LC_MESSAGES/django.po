@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2017-09-22 13:24+0900\n"
+"POT-Creation-Date: 2017-09-25 11:16+0900\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -62,8 +62,146 @@ msgstr "한국어"
 msgid "English"
 msgstr "영어"
 
-#~ msgid "SELL"
-#~ msgstr "매출"
+#: .\masterdatas\apps.py:7
+msgid "Masterdata"
+msgstr "기준정보"
 
-#~ msgid "BUY"
-#~ msgstr "매입"
+#: .\masterdatas\apps.py:8
+msgid "Masterdatas"
+msgstr "기준정보 목록"
+
+#: .\masterdatas\models.py:14
+msgid "SELL"
+msgstr "매출"
+
+#: .\masterdatas\models.py:15
+msgid "BUY"
+msgstr "매입"
+
+#: .\masterdatas\models.py:18
+msgid "Customer|customer id"
+msgstr "고객ID"
+
+#: .\masterdatas\models.py:19
+msgid "customer name"
+msgstr "고객명"
+
+#: .\masterdatas\models.py:20
+msgid "business division"
+msgstr "사업구분"
+
+#: .\masterdatas\models.py:23
+msgid "business type"
+msgstr "사업유형"
+
+#: .\masterdatas\models.py:24
+msgid "business no"
+msgstr "사업자 번호"
+
+#: .\masterdatas\models.py:25
+msgid "owner"
+msgstr "대표이사"
+
+#: .\masterdatas\models.py:26
+msgid "business item"
+msgstr "업종"
+
+#: .\masterdatas\models.py:27
+msgid "business status"
+msgstr "사업상태"
+
+#: .\masterdatas\models.py:28
+msgid "customer status"
+msgstr "고객상태"
+
+#: .\masterdatas\models.py:29
+msgid "country"
+msgstr "국가"
+
+#: .\masterdatas\models.py:30
+msgid "address 1"
+msgstr "주소 1"
+
+#: .\masterdatas\models.py:31
+msgid "address 2"
+msgstr "주소 2"
+
+#: .\masterdatas\models.py:32
+msgid "post no"
+msgstr "우편번호"
+
+#: .\masterdatas\models.py:33
+msgid "phone no"
+msgstr "전화번호"
+
+#: .\masterdatas\models.py:34
+msgid "fax no"
+msgstr "팩스번호"
+
+#: .\masterdatas\models.py:35
+msgid "mobile no"
+msgstr "모바일 번호"
+
+#: .\masterdatas\models.py:36
+msgid "email"
+msgstr "이메일"
+
+#: .\masterdatas\models.py:37
+msgid "user name 1"
+msgstr "담당자 1"
+
+#: .\masterdatas\models.py:38
+msgid "mobile no 1"
+msgstr "담당자1 모바일 번호"
+
+#: .\masterdatas\models.py:39
+msgid "email 1"
+msgstr "담당자1 이메일"
+
+#: .\masterdatas\models.py:40
+msgid "user name 2"
+msgstr "담당자 2"
+
+#: .\masterdatas\models.py:41
+msgid "mobile no 2"
+msgstr "담당자 2 모바일 번호"
+
+#: .\masterdatas\models.py:42
+msgid "email 2"
+msgstr "담당자 2 이메일"
+
+#: .\masterdatas\models.py:43
+msgid "bank name"
+msgstr "은행명"
+
+#: .\masterdatas\models.py:44
+msgid "account no"
+msgstr "계좌번호"
+
+#: .\masterdatas\models.py:45
+msgid "account name"
+msgstr "계좌명"
+
+#: .\masterdatas\models.py:56
+msgid "create user"
+msgstr "등록자"
+
+#: .\masterdatas\models.py:57
+msgid "create time"
+msgstr "등록시간"
+
+#: .\masterdatas\models.py:58
+msgid "update user"
+msgstr "수정자"
+
+#: .\masterdatas\models.py:59
+msgid "update time"
+msgstr "수정일자"
+
+#: .\masterdatas\models.py:64
+msgid "Customer"
+msgstr "고객"
+
+#: .\masterdatas\models.py:65
+msgid "Customers"
+msgstr "고객목록"

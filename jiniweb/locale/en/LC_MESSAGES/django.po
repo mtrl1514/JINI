@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2017-09-22 13:24+0900\n"
+"POT-Creation-Date: 2017-09-25 11:16+0900\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -59,4 +59,148 @@ msgstr ""
 
 #: .\jiniweb\settings.py:147
 msgid "English"
+msgstr ""
+
+#: .\masterdatas\apps.py:7
+msgid "Masterdata"
+msgstr ""
+
+#: .\masterdatas\apps.py:8
+msgid "Masterdatas"
+msgstr ""
+
+#: .\masterdatas\models.py:14
+msgid "SELL"
+msgstr ""
+
+#: .\masterdatas\models.py:15
+msgid "BUY"
+msgstr ""
+
+#: .\masterdatas\models.py:18
+msgid "Customer|customer id"
+msgstr ""
+
+#: .\masterdatas\models.py:19
+msgid "customer name"
+msgstr ""
+
+#: .\masterdatas\models.py:20
+msgid "business division"
+msgstr ""
+
+#: .\masterdatas\models.py:23
+msgid "business type"
+msgstr ""
+
+#: .\masterdatas\models.py:24
+msgid "business no"
+msgstr ""
+
+#: .\masterdatas\models.py:25
+msgid "owner"
+msgstr ""
+
+#: .\masterdatas\models.py:26
+msgid "business item"
+msgstr ""
+
+#: .\masterdatas\models.py:27
+msgid "business status"
+msgstr ""
+
+#: .\masterdatas\models.py:28
+msgid "customer status"
+msgstr ""
+
+#: .\masterdatas\models.py:29
+msgid "country"
+msgstr ""
+
+#: .\masterdatas\models.py:30
+msgid "address 1"
+msgstr ""
+
+#: .\masterdatas\models.py:31
+msgid "address 2"
+msgstr ""
+
+#: .\masterdatas\models.py:32
+msgid "post no"
+msgstr ""
+
+#: .\masterdatas\models.py:33
+msgid "phone no"
+msgstr ""
+
+#: .\masterdatas\models.py:34
+msgid "fax no"
+msgstr ""
+
+#: .\masterdatas\models.py:35
+msgid "mobile no"
+msgstr ""
+
+#: .\masterdatas\models.py:36
+msgid "email"
+msgstr ""
+
+#: .\masterdatas\models.py:37
+msgid "user name 1"
+msgstr ""
+
+#: .\masterdatas\models.py:38
+msgid "mobile no 1"
+msgstr ""
+
+#: .\masterdatas\models.py:39
+msgid "email 1"
+msgstr ""
+
+#: .\masterdatas\models.py:40
+msgid "user name 2"
+msgstr ""
+
+#: .\masterdatas\models.py:41
+msgid "mobile no 2"
+msgstr ""
+
+#: .\masterdatas\models.py:42
+msgid "email 2"
+msgstr ""
+
+#: .\masterdatas\models.py:43
+msgid "bank name"
+msgstr ""
+
+#: .\masterdatas\models.py:44
+msgid "account no"
+msgstr ""
+
+#: .\masterdatas\models.py:45
+msgid "account name"
+msgstr ""
+
+#: .\masterdatas\models.py:56
+msgid "create user"
+msgstr ""
+
+#: .\masterdatas\models.py:57
+msgid "create time"
+msgstr ""
+
+#: .\masterdatas\models.py:58
+msgid "update user"
+msgstr ""
+
+#: .\masterdatas\models.py:59
+msgid "update time"
+msgstr ""
+
+#: .\masterdatas\models.py:64
+msgid "Customer"
+msgstr ""
+
+#: .\masterdatas\models.py:65
+msgid "Customers"
 msgstr ""
