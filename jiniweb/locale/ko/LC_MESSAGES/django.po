@@ -80,19 +80,19 @@ msgstr "매입"
 
 #: .\masterdatas\models.py:18
 msgid "Customer|customer id"
-msgstr "고객ID"
+msgstr "거래처ID"
 
 #: .\masterdatas\models.py:19
 msgid "customer name"
-msgstr "고객명"
+msgstr "거래처명"
 
 #: .\masterdatas\models.py:20
 msgid "business division"
-msgstr "사업구분"
+msgstr "사업자구분"
 
 #: .\masterdatas\models.py:23
 msgid "business type"
-msgstr "사업유형"
+msgstr "사업자유형"
 
 #: .\masterdatas\models.py:24
 msgid "business no"
@@ -104,15 +104,15 @@ msgstr "대표이사"
 
 #: .\masterdatas\models.py:26
 msgid "business item"
-msgstr "업종"
+msgstr "종목"
 
 #: .\masterdatas\models.py:27
 msgid "business status"
-msgstr "사업상태"
+msgstr "업태"
 
 #: .\masterdatas\models.py:28
 msgid "customer status"
-msgstr "고객상태"
+msgstr "거래처상태"
 
 #: .\masterdatas\models.py:29
 msgid "country"
@@ -120,11 +120,11 @@ msgstr "국가"
 
 #: .\masterdatas\models.py:30
 msgid "address 1"
-msgstr "주소 1"
+msgstr "주소"
 
 #: .\masterdatas\models.py:31
 msgid "address 2"
-msgstr "주소 2"
+msgstr "상세주소"
 
 #: .\masterdatas\models.py:32
 msgid "post no"
@@ -132,19 +132,19 @@ msgstr "우편번호"
 
 #: .\masterdatas\models.py:33
 msgid "phone no"
-msgstr "전화번호"
+msgstr "회사 전화번호"
 
 #: .\masterdatas\models.py:34
 msgid "fax no"
-msgstr "팩스번호"
+msgstr "회사 팩스번호"
 
 #: .\masterdatas\models.py:35
 msgid "mobile no"
-msgstr "모바일 번호"
+msgstr "회사 모바일 번호"
 
 #: .\masterdatas\models.py:36
 msgid "email"
-msgstr "이메일"
+msgstr "회사 이메일"
 
 #: .\masterdatas\models.py:37
 msgid "user name 1"
@@ -172,7 +172,7 @@ msgstr "담당자 2 이메일"
 
 #: .\masterdatas\models.py:43
 msgid "bank name"
-msgstr "은행명"
+msgstr "거래은행"
 
 #: .\masterdatas\models.py:44
 msgid "account no"
@@ -180,7 +180,7 @@ msgstr "계좌번호"
 
 #: .\masterdatas\models.py:45
 msgid "account name"
-msgstr "계좌명"
+msgstr "예금주명"
 
 #: .\masterdatas\models.py:56
 msgid "create user"
@@ -200,8 +200,8 @@ msgstr "수정일자"
 
 #: .\masterdatas\models.py:64
 msgid "Customer"
-msgstr "고객"
+msgstr "거래처"
 
 #: .\masterdatas\models.py:65
 msgid "Customers"
-msgstr "고객목록"
+msgstr "거래처목록"

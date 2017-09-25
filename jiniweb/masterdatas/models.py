@@ -53,9 +53,9 @@ class Customer(models.Model):
     cus_cmf_8 = models.CharField(db_column='CUS_CMF_8', max_length=100, blank=True)  # Field name made lowercase.
     cus_cmf_9 = models.CharField(db_column='CUS_CMF_9', max_length=100, blank=True)  # Field name made lowercase.
     cus_cmf_10 = models.CharField(db_column='CUS_CMF_10', max_length=100, blank=True)  # Field name made lowercase.
-    create_user = models.ForeignKey(User, verbose_name=_('create user'), related_name='create_user', default=' ')  # Field name made lowercase.
+    create_user = models.ForeignKey(User, verbose_name=_('create user'), related_name='customer_create_user', default=' ')  # Field name made lowercase.
     create_time = models.DateTimeField(db_column='CREATE_TIME', verbose_name=_('create time'), auto_now_add=True)  # Field name made lowercase.
-    update_user = models.ForeignKey(User, verbose_name=_('update user'), related_name='update_user', default=' ')  # Field name made lowercase.
+    update_user = models.ForeignKey(User, verbose_name=_('update user'), related_name='customer_update_user', default=' ')  # Field name made lowercase.
     update_time = models.DateTimeField(db_column='UPDATE_TIME', verbose_name=_('update time'), auto_now=True)  # Field name made lowercase.
 
     class Meta:
@@ -65,3 +65,52 @@ class Customer(models.Model):
         verbose_name_plural = _('Customers')
     def __str__(self):
         return self.customer_name
+
+
+class Item(models.Model):    
+    CURRENCIES = ('CNY', 'KRW')
+    ITEM_CURRENCY_CHOICES = (
+            ('CNY', _('CNY ¥')), 
+            ('KRW', _('KRW ￦')),
+    )
+
+    item_code = models.CharField(db_column='ITEM_CODE', verbose_name=_('Item|item code'), max_length=25, primary_key=True)  # Field name made lowercase.
+    item_version = models.IntegerField(db_column='ITEM_VERSION', verbose_name=_('Item|item version'), primary_key=True)  # Field name made lowercase.    
+    item_name = models.CharField(db_column='ITEM_NAME', verbose_name=_('Item|item name'), max_length=200)  # Field name made lowercase.
+    item_gauge = models.CharField(db_column='ITEM_GAUGE', verbose_name=_('Item|item gauge'), max_length=200, blank=True)  # Field name made lowercase.
+    item_color = models.CharField(db_column='ITEM_COLOR', verbose_name=_('Item|item color'), max_length=200, blank=True)  # Field name made lowercase.
+    buy_method = models.CharField(db_column='BUY_METHOD', verbose_name=_('Item|buy method'), max_length=100, blank=True)  # Field name made lowercase.
+    item_currency = models.CharField(db_column='ITEM_CURRENCY', verbose_name=_('Item|item currency'), max_length=100, blank=True,
+                                    choices=ITEM_CURRENCY_CHOICES,
+                                    default='CNY')  # Field name made lowercase.
+    buy_cost = models.DecimalField(db_column='BUY_COST', verbose_name=_('Item|buy cost'), max_digits=10, decimal_places=2, blank=True) # Field name made lowercase.
+    sell_cost = models.DecimalField(db_column='SELL_COST', verbose_name=_('Item|sell cost'), max_digits=10, decimal_places=2, blank=True) # Field name made lowercase.
+    unit_cost = models.DecimalField(db_column='UNIT_COST', verbose_name=_('Item|unit cost'), max_digits=10, decimal_places=2, blank=True) # Field name made lowercase.
+    item_group_1 = models.CharField(db_column='ITEM_GROUP_1', verbose_name=_('Item|item group 1'), max_length=100, blank=True)  # Field name made lowercase.
+    item_group_2 = models.CharField(db_column='ITEM_GROUP_2', verbose_name=_('Item|item group 2'), max_length=100, blank=True)  # Field name made lowercase.
+    item_group_3 = models.CharField(db_column='ITEM_GROUP_3', verbose_name=_('Item|item group 3'), max_length=100, blank=True)  # Field name made lowercase.
+    item_group_4 = models.CharField(db_column='ITEM_GROUP_4', verbose_name=_('Item|item group 4'), max_length=100, blank=True)  # Field name made lowercase.
+    item_group_5 = models.CharField(db_column='ITEM_GROUP_5', verbose_name=_('Item|item group 5'), max_length=100, blank=True)  # Field name made lowercase.    
+    item_cmf_1 = models.CharField(db_column='ITEM_CMF_1', max_length=100, blank=True)  # Field name made lowercase.
+    item_cmf_2 = models.CharField(db_column='ITEM__CMF_2', max_length=100, blank=True)  # Field name made lowercase.
+    item_cmf_3 = models.CharField(db_column='ITEM__CMF_3', max_length=100, blank=True)  # Field name made lowercase.
+    item_cmf_4 = models.CharField(db_column='ITEM__CMF_4', max_length=100, blank=True)  # Field name made lowercase.
+    item_cmf_5 = models.CharField(db_column='ITEM__CMF_5', max_length=100, blank=True)  # Field name made lowercase.
+    item_cmf_6 = models.CharField(db_column='ITEM__CMF_6', max_length=100, blank=True)  # Field name made lowercase.
+    item_cmf_7 = models.CharField(db_column='ITEM__CMF_7', max_length=100, blank=True)  # Field name made lowercase.
+    item_cmf_8 = models.CharField(db_column='ITEM__CMF_8', max_length=100, blank=True)  # Field name made lowercase.
+    item_cmf_9 = models.CharField(db_column='ITEM__CMF_9', max_length=100, blank=True)  # Field name made lowercase.
+    item_cmf_10 = models.CharField(db_column='ITEM_CMF_10', max_length=100, blank=True)  # Field name made lowercase.
+    create_user = models.ForeignKey(User, verbose_name=_('create user'), related_name='item_create_user', default=' ')  # Field name made lowercase.
+    create_time = models.DateTimeField(db_column='CREATE_TIME', verbose_name=_('create time'), auto_now_add=True)  # Field name made lowercase.
+    update_user = models.ForeignKey(User, verbose_name=_('update user'), related_name='item_update_user', default=' ')  # Field name made lowercase.
+    update_time = models.DateTimeField(db_column='UPDATE_TIME', verbose_name=_('update time'), auto_now=True)  # Field name made lowercase.
+
+    class Meta:
+        managed = True
+        db_table = 'jbasitmmst'
+        verbose_name = _('Item')
+        verbose_name_plural = _('Items')
+
+    def __str__(self):
+        return self.item_name
