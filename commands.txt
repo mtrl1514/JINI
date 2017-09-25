@@ -1,0 +1,15 @@
+python 버전확인
+python --version
+python version => 3.6.1
+
+django 버전확인
+import django
+django.VERSION
+django version => 1.11.4
+
+
+git 사용법
+git status : 로컬 저장소 상태
+git add . : 현재 위치에 변경된 소스 추가
+git commit -a -m "변경내용 설명" : 변경된 내용 커밋
+git push : github 저장소로 데이터 전송
